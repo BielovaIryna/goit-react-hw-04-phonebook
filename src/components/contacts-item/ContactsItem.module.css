@@ -1,0 +1,13 @@
+.contactsItem{
+	padding: 5px;
+}
+.contactsItem:not(:last-child){
+	margin-bottom: 10px;
+}
+.tel{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.delButton{
+	padding: 5px 10px;
+}

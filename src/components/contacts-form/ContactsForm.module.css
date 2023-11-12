@@ -1,0 +1,25 @@
+.contactForm{
+	margin: 0 auto 10px auto;
+	max-width: 50%;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
+	
+}
+.contactFormLabel{
+	font-size: 15px;
+	margin-bottom: 5px;
+	display: block;
+	width: 100%;
+}
+.contactFormInput{
+	padding: 5px;
+	width: 60%;
+	margin-left: 10px;
+}
+.contactFormLabel:not(:last-child){
+	margin-bottom: 10px;
+}
+.submitButton{
+	padding:5px 10px;
+}

@@ -1,0 +1,16 @@
+.section{
+	padding: 10px;
+	background-color: aquamarine;
+	text-align: center;
+	color: black;
+}
+.mainTitle{
+	
+	font-size: 25px;
+	margin-bottom: 10px;
+
+}
+.secondaryTitle{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
