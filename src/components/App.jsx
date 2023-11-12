@@ -13,7 +13,7 @@ const contactsList = [
   {id: 'id-4', name: 'Annie Copeland', phone: '227-91-26'}
 ]
 export const App = () =>{
-  const [contacts, setContacts] =useState(JSON.parse(window.localStorage.getItem('contacts')) ?? contactsList)
+  const [contacts, setContacts] =useState(() => JSON.parse(window.localStorage.getItem('contacts')) ?? contactsList)
 
   const [filter, setFilter] = useState('');
     
