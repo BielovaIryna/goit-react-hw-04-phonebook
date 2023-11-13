@@ -23,7 +23,7 @@ useEffect (()=>{
 
   const addContact  = (contact) => {
     const hasDuplicates = contacts.some(cont =>
-cont.name === contact.name
+cont.name.toLowerCase() === contact.name.toLowerCase()
     )
     if(hasDuplicates){
       Notify.failure(`${contact.name} already exists`)
@@ -46,7 +46,7 @@ cont.name === contact.name
       }else{
         return filteredCondtacts = contacts
       }
-    console.log(filterContacts);
+   
     return filteredCondtacts
   }
 
@@ -67,8 +67,7 @@ cont.name === contact.name
         <ContactList
         handlerDel={deleteContact}
         filteredContacts={handlerFilter}
-        filter ={filter}
-        contacts ={contacts} />
+        />
       </div>
     );
   
